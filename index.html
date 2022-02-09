@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Mis metas -->
+  <meta charset="UTF-8">
+  <title>DAW</title>
+  <link rel="shortcut icon" href="imgs/logo_small.png" />
+  <!-- Aquí irían los link de CSS de bootstrap que tenemos en local -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Resto de CSS y/o JS -->
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="p-3 text-white">
+    <div class="container " id="fondoAzul">
+      <div id="fondoNaranja"
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" id="fondoAzul" class="nav-link px-2 text-secondary"><img src="imgs/logo_white_large.png"
+                alt="DAW" width="35" height="45"></a></li>
+          <li><a href="index.html" class="nav-link px-2 lAzul">Home</a></li>
+          <li><a href="album.html" class="nav-link px-2 lAzul">Album</a></li>
+          <li><a href="circuitos.html" class="nav-link px-2 lAzul">Circuitos</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class=" form-control form-control-dark" placeholder="Buscar" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2" id="fondoAzul">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
+  <div class="layout container px-4 py-5">
+    <input name="nav" type="radio" class="nav home-radio" id="home" checked="checked" />
+    <div class="page home-page">
+      <div class="page-contents">
+        <h1>Home</h1>
+        <p>Una página web donde puedes encontrar todas las últimas noticias, informaciones y filtraciones 
+        sobre el gran espectaculo de la Formula 1!</p>
+        <p><label for="about">Learn more</label></p>
+        <img src="imgs/mclaren_monaco.jpeg">
+      </div>
+    </div>
+    <label class="nav" for="home">
+      <span>
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Home
+      </span>
+    </label>
+
+    <input name="nav" type="radio" class="about-radio" id="about" />
+    <div class="page about-page">
+      <div class="page-contents">
+        <h1>2021</h1>
+        <p>Analizamos la temporada pasada</p>
+          <img src="imgs/salida.jpg">
+
+      </div>
+    </div>
+    <label class="nav" for="about">
+      <span>
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+          <line x1="12" y1="17" x2="12" y2="17"></line>
+        </svg>
+        2021
+      </span>
+    </label>
+
+    <input name="nav" type="radio" class="contact-radio" id="contact" />
+    <div class="page contact-page">
+      <div class="page-contents">
+        <h1>2022</h1>
+        <p>Los siguientes constructores y pilotos están actualmente bajo contrato para competir en el Campeonato Mundial de 2022. Todos los equipos competirán con neumáticos suministrados por Pirelli. Será la primera vez desde 2014 que el piloto defensor del título utlice el número 1 en su monoplaza.</p>
+        <p><a href="#">Get in touch</a></p>
+        <img src="imgs/ver1.jpg">    
+      </div>
+    </div>
+    <label class="nav" for="contact">
+      <span>
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        2022
+      </span>
+
+    </label>
+  </div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Últimas noticias</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class=" text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#toggles2" />
+          </svg>
+        </div>
+        <div>
+          <h2>El momento decisivo de 2021</h2>
+          <img src="imgs/cascomax.jpg" width="70%" >
+          <p>Verstappen relata lo que tuvo que sufrir por un doloroso calambre en una pierna en el momento decisivo de 2021. <br>"Una vuelta más y no podría haber terminado la carrera en Abu Dabi"</p>
+          <a href="album.html" id="fondoAzul" class="btn btn-outline-light me-2">Ver más</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class=" text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#cpu-fill" />
+          </svg>
+        </div>
+        <div>
+          <h2>Renovación en McLaren</h2>
+          <img src="imgs/lando.webp" width="100%">
+          <p>Lando Norris renueva con McLaren ¡cuatro años! El joven se ata a la escudería con la que debutó en F1</p>
+          <a href="album.html" id="fondoAzul" class="btn btn-outline-light me-2">Ver más</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class=" text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#tools" />
+          </svg>
+        </div>
+        <div>
+          <h2>Cambio de ruedas</h2><br><br>
+          <img src="imgs/ruedas.jpg" width="100%">
+
+          <p>Para esta nueva temporada los neumáticos pasan de 13 a 18 pulgadas, uno de los cambios técnicos más importantes del nuevo reglamento. Alonso las conoce por su periplo en el WEC.</p>
+          <a href="album.html" id="fondoAzul" class="btn btn-outline-light me-2">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  
+  <div class="container-fluid"">
+
+    <button onclick="topFunction()" id="to-top" title="Go to top">Top</button>
+
+    <div class="row  row-no-gutters">
+      <div class="col-xs-12 col-sm-6 col-md-4" >
+        <ul>
+          <li class="col-heading">Contacto</li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:99-999-999-9999">99-999-999-9999</a>
+          </li>
+          <li>
+            <i class="fa fa-mobile" aria-hidden="true"></i><a href="sms:99-999-999-9999">SMS Message</a>
+          </li>
+          <li>
+             <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Address</a>
+          </li> 
+          <li>
+             <i class="fa fa-envelope-square" aria-hidden="true"></i><a href="mailto:someone@yoursite.com?subject=Email Subject line">Email Us</a>  
+          </li> 
+        </ul>
+      </div>     
+
+      <div class="col-xs-12 col-sm-6 col-md-4" >
+        <ul>
+          <li class="col-heading">Enlaces a las otras pags</li>
+          <li><a href="index.html" class="nav-link px-2 lAzul">Home</a></li>
+          
+            <li><a href="album.html" class="nav-link px-2 lAzul">Album</a></li>
+            <li><a href="circuitos.html" class="nav-link px-2 lAzul">Circuitos</a></li>
+        </ul>
+      </div>      
+
+      <div class="col-xs-12 col-sm-6 col-md-4" >
+        <ul>
+          <li class="col-heading">Formulario suscripción</li>
+          <div class="container">
+            <form class="form-horizontal" action="/action_page.php">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-10">          
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" id="fondoAzul" class="btn btn-outline-light me-2">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </ul>
+      </div>
+      
+      
+    </div> <!--  end row  -->
+    
+    <div class="row row-no-gutters" id="bottom-footer" >
+      
+      <div class="col-xs-12 col-md-5 text-center" >
+          <ul class="vertical-links small">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 text-center" >
+        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+      </div>
+      <div class="col-xs-12 col-md-5 text-center" >
+        <ul>
+          <li class="small">© Copyright 2022 Website by Ángel Ruescas. All Rights reserved.</li>
+        </ul>
+      </div>
+    </div> <!--  end row  -->
+
+  </div> <!--  end container-fluid  -->
+
+<script>
+// Script from W3 Schools  
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("to-top").style.display = "block";
+  } else {
+    document.getElementById("to-top").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <!-- scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
